@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DBABDEB67288E944AF8795FBE636D9183EB27CDE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D15DC99B27373481AB939F41568A702FDADE3445" : 0,
+    "DBABDEB67288E944AF8795FBE636D9183EB27CDE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B698712C-4D2F-45A9-B197-6D4FB571AD96",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D15DC99B27373481AB939F41568A702FDADE3445" : "..",
+    "DBABDEB67288E944AF8795FBE636D9183EB27CDE" : "textChangeColor\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "textChangeColor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "textChangeColor.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dnhthooi\/IOSPlaySounds.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D15DC99B27373481AB939F41568A702FDADE3445"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dnhthooi\/IOSColorTextField.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBABDEB67288E944AF8795FBE636D9183EB27CDE"
+    }
+  ]
+}

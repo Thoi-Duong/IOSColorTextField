@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCr-kk-oRH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="eCr-kk-oRH">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
@@ -27,40 +27,101 @@
                                     <rect key="frame" x="84" y="134" width="249" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xbq-cy-qo6">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="84" y="197" width="249" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cby-Ez-KoA">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="84" y="275" width="155" height="30"/>
+                                </variation>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x8i-5t-vDn">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <animations/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="284" y="275" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="switchChangeValue" destination="BYZ-38-t0r" eventType="valueChanged" id="lhx-Mp-NyY"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Xbq-cy-qo6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="0Hx-JP-Zfm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xbq-cy-qo6" secondAttribute="trailing" constant="50" id="5sT-ui-dZf"/>
+                            <constraint firstItem="Xbq-cy-qo6" firstAttribute="top" secondItem="eCr-kk-oRH" secondAttribute="bottom" constant="50" id="8lB-MY-fg5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eCr-kk-oRH" secondAttribute="trailing" constant="50" id="ECt-z9-7f5"/>
+                            <constraint firstItem="x8i-5t-vDn" firstAttribute="leading" secondItem="cby-Ez-KoA" secondAttribute="trailing" constant="20" id="GrH-6m-jR6"/>
+                            <constraint firstItem="cby-Ez-KoA" firstAttribute="top" secondItem="Xbq-cy-qo6" secondAttribute="bottom" constant="50" id="d17-iz-qj8"/>
                             <constraint firstItem="eCr-kk-oRH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="o6s-aa-meq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x8i-5t-vDn" secondAttribute="trailing" constant="50" id="p6I-xe-tsf"/>
                             <constraint firstItem="eCr-kk-oRH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q7l-6j-Evk"/>
+                            <constraint firstItem="x8i-5t-vDn" firstAttribute="top" secondItem="Xbq-cy-qo6" secondAttribute="bottom" constant="50" id="sI3-sU-rcU"/>
+                            <constraint firstItem="cby-Ez-KoA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="sxH-GK-vGQ"/>
                             <constraint firstItem="eCr-kk-oRH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="xeT-a8-OOV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="eCr-kk-oRH"/>
+                                <exclude reference="Xbq-cy-qo6"/>
+                                <exclude reference="cby-Ez-KoA"/>
+                                <exclude reference="x8i-5t-vDn"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="ECt-z9-7f5"/>
                                 <exclude reference="o6s-aa-meq"/>
                                 <exclude reference="q7l-6j-Evk"/>
                                 <exclude reference="xeT-a8-OOV"/>
+                                <exclude reference="0Hx-JP-Zfm"/>
+                                <exclude reference="5sT-ui-dZf"/>
+                                <exclude reference="8lB-MY-fg5"/>
+                                <exclude reference="d17-iz-qj8"/>
+                                <exclude reference="sxH-GK-vGQ"/>
+                                <exclude reference="GrH-6m-jR6"/>
+                                <exclude reference="p6I-xe-tsf"/>
+                                <exclude reference="sI3-sU-rcU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="eCr-kk-oRH"/>
+                                <include reference="Xbq-cy-qo6"/>
+                                <include reference="cby-Ez-KoA"/>
+                                <include reference="x8i-5t-vDn"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="ECt-z9-7f5"/>
                                 <include reference="o6s-aa-meq"/>
                                 <include reference="q7l-6j-Evk"/>
                                 <include reference="xeT-a8-OOV"/>
+                                <include reference="0Hx-JP-Zfm"/>
+                                <include reference="5sT-ui-dZf"/>
+                                <include reference="8lB-MY-fg5"/>
+                                <include reference="d17-iz-qj8"/>
+                                <include reference="sxH-GK-vGQ"/>
+                                <include reference="GrH-6m-jR6"/>
+                                <include reference="p6I-xe-tsf"/>
+                                <include reference="sI3-sU-rcU"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="eCr-kk-oRH" id="eLS-pN-JHP"/>
+                        <outlet property="switchButton" destination="x8i-5t-vDn" id="I9T-HQ-bPi"/>
+                        <outlet property="textFieldDollar" destination="Xbq-cy-qo6" id="elL-NV-ckj"/>
+                        <outlet property="textFieldNote" destination="cby-Ez-KoA" id="c2g-4L-TSg"/>
+                        <outlet property="textFieldNum" destination="eCr-kk-oRH" id="76X-rk-E9W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		831EB5DC1C32621300DAFFFE /* textFieldChangeColorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EB5DB1C32621300DAFFFE /* textFieldChangeColorDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		831EB5DE1C327B3700DAFFFE /* textDollarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EB5DD1C327B3700DAFFFE /* textDollarDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		83858B421C325F2A0029A986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83858B411C325F2A0029A986 /* AppDelegate.swift */; };
 		83858B441C325F2A0029A986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83858B431C325F2A0029A986 /* ViewController.swift */; };
 		83858B471C325F2A0029A986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83858B451C325F2A0029A986 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		831EB5DB1C32621300DAFFFE /* textFieldChangeColorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textFieldChangeColorDelegate.swift; sourceTree = "<group>"; };
+		831EB5DD1C327B3700DAFFFE /* textDollarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textDollarDelegate.swift; sourceTree = "<group>"; };
 		83858B3E1C325F2A0029A986 /* textChangeColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textChangeColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83858B411C325F2A0029A986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83858B431C325F2A0029A986 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				831EB5DB1C32621300DAFFFE /* textFieldChangeColorDelegate.swift */,
+				831EB5DD1C327B3700DAFFFE /* textDollarDelegate.swift */,
 			);
 			name = viewDelegate;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83858B441C325F2A0029A986 /* ViewController.swift in Sources */,
+				831EB5DE1C327B3700DAFFFE /* textDollarDelegate.swift in Sources */,
 				831EB5DC1C32621300DAFFFE /* textFieldChangeColorDelegate.swift in Sources */,
 				83858B421C325F2A0029A986 /* AppDelegate.swift in Sources */,
 			);

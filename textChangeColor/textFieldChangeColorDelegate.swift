@@ -28,10 +28,37 @@ class texFieldChangeColorDelegate: NSObject, UITextFieldDelegate{
         let b = CGFloat (Float(arc4random()) /  Float(UInt32.max))
         
         let color:UIColor! =  UIColor(red: r, green: g, blue:b, alpha: 1)
-        
+        print("text:\(textField.text!)___string:\(string)")
+        if string == ""{
+            return true
+        }
         textField.textColor = color
+        if textField.text?.characters.count == 0{
+            return true
+        }
         
-        return true
+        let num1 = Int(string)
+        let num2 = Int(textField.text!)
+    
+        if num1 == nil || num2 == nil {
+        
+//            var str:String = textField.text!
+//            str.removeAtIndex(str.endIndex.predecessor())
+//            
+//            textField.text = str
+            
+            return false
+        }
+        
+         if textField.text?.characters.count < 5 {
+            return true
+        }
+        
+        
+        
+        
+        return false
+        
     }
     
 
